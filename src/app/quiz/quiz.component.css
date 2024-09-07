@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#pokemon-container {
+    margin: 20px 0;
+}
+
+#pokemon-image {
+    width: 300px;
+    height: 300px;
+}
+
+#buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.answer-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.answer-button:hover {
+    background-color: #0056b3;
+}
+
+.answer-button:disabled {
+    background-color: #d3d3d3; /* Light grey background */
+    color: #a9a9a9; /* Darker grey text */
+    cursor: not-allowed; /* Change cursor to indicate that the button is disabled */
+}
+
+#feedback {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+#next-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#next-btn:hover {
+    background-color: #218838;
+}
+
+#next-btn:disabled {
+    background-color: #d3d3d3; /* Light grey background for disabled state */
+    color: #a9a9a9; /* Darker grey text for disabled state */
+    cursor: not-allowed; /* Change cursor to indicate that the button is disabled */
+}

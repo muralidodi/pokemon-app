@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Who's That Pokémon?</h1>
+
+    <div id="pokemon-container">
+        <img id="pokemon-image" [src]="pokemonImageSource" alt="Who's that Pokémon?">
+    </div>
+
+    <div id="buttons-container">
+        <!-- Limit to 4 buttons using displayedPokemonList -->
+        <button *ngFor="let pokemon of displayedPokemonList" class="answer-button" 
+                (click)="processAnswer($event)" 
+                [disabled]="answerDisabled">
+            {{ pokemon.name }}
+        </button>
+    </div>
+
+    <p id="feedback">{{ feedbackContent }}</p>
+    <p>Score: <span id="score">{{score}}</span></p>
+
+    <button id="next-btn" (click)="loadNewPokemon()" 
+            [disabled]="nextButtonDisabled">Next Pokémon</button>
+</div>
+
